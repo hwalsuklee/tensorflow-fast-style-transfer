@@ -27,7 +27,7 @@ All style-images and content-images to produce following sample results are give
 The source image is from https://www.artstation.com/artwork/4zXxW
 
 Results were obtained from default setting except `--max_size 1920`.  
-An image was rendered approximately after 300ms on  GTX 980 ti.
+An image was rendered approximately after 100ms on  GTX 980 ti.
 
 Click on result images to see full size images.
 

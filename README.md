@@ -24,7 +24,7 @@ The implemenationa is also coincided with the paper both in variable-names and a
 All style-images and content-images to produce following sample results are given in `style` and `content` folders.
 
 ### Chicago
-Following results are obtained from `chicago` image, which is commonly used in other implementations to show their performance.
+Following results with `--max_size 1024` are obtained from `chicago` image, which is commonly used in other implementations to show their performance.
 
 Click on result images to see full size images.
 

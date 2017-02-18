@@ -23,6 +23,32 @@ The implemenationa is also coincided with the paper both in variable-names and a
 
 All style-images and content-images to produce following sample results are given in `style` and `content` folders.
 
+### Chicago
+Following results are obtained from `chicago` image, which is commonly used in other implementations to show their performance.
+
+Click on result images to see full size images.
+
+<p align='center'>
+<img src = 'content/chicago.jpg' height="220px">
+</p>
+<p align='center'>
+<img src = 'style/thumbs/wave.jpg' height = '210px'>
+<img src = 'samples/chicago_wave.jpg' height = '210px'>
+<img src = 'samples/chicago_the_scream.jpg' height = '210px'>
+<img src = 'style/thumbs/the_scream.jpg' height = '210px'>
+<br>
+<img src = 'style/thumbs/la_muse.jpg' height = '210px'>
+<img src = 'samples/chicago_la_muse.jpg' height = '210px'>
+<img src = 'samples/chicago_rain_princess.jpg' height = '210px'>
+<img src = 'style/thumbs/rain_princess.jpg' height = '210px'>
+<br>
+<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '210px'>
+<img src = 'samples/chicago_shipwreck.jpg' height = '210px'>
+<img src = 'samples/chicago_udnie.jpg' height = '210px'>
+<img src = 'style/thumbs/udnie.jpg' height = '210px'>
+<br>
+</p>
+
 ### Female Knight
 The source image is from https://www.artstation.com/artwork/4zXxW
 

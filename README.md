@@ -28,30 +28,27 @@ The implementation is coincided with the paper both in variable-names and algori
 Results were obtained from default setting except `--max_size 1920`.  
 An image was rendered approximately after 300ms on  GTX 980 ti.
 
-<div align='left'>
-<img src = 'content/female_knight.jpg' height="400px">
-</div>
-     
-<div align = 'left'>
-<img src = 'samples/femal_knight_wave.jpg' height = '400px'></a>
-<img src = 'style/wave.jpg' height = '400px'></a>
+<p align='left'>
+<img src = 'content/female_knight.jpg' height="300px">
+<img src = 'samples/female_knight_wave.jpg' height = '300px'>
+<a href = 'style/wave.jpg'><img src = 'style/thumbs/wave.jpg' height = '300px'>
 <br>
-<img src = 'samples/femal_knight_the_scream.jpg' height = '400px'></a>
-<img src = 'style/the_scream.jpg' height = '400px'></a>
+<img src = 'samples/female_knight_the_scream.jpg' height = '300px'>
+<a href = 'style/the_scream.jpg'><img src = 'style/thumbs/the_scream.jpg' height = '300px'>
 <br>
-<img src = 'samples/femal_knight_la_muse.jpg' height = '400px'></a>
-<img src = 'style/la_muse.jpg' height = '400px'></a>
+<img src = 'samples/female_knight_la_muse.jpg' height = '300px'>
+<a href = 'style/la_muse.jpg'><img src = 'style/thumbs/la_muse.jpg' height = '300px'>
 <br>
-<img src = 'samples/femal_knight_rain_princess.jpg' height = '400px'></a>
-<img src = 'style/rain_princess.jpg' height = '400px'></a>
+<img src = 'samples/female_knight_rain_princess.jpg' height = '300px'>
+<a href = 'style/rain_princess.jpg'><img src = 'style/thumbs/rain_princess.jpg' height = '300px'>
 <br>
-<img src = 'samples/femal_knight_shipwreck.jpg' height = '400px'></a>
-<img src = 'style/the_shipwreck_of_the_minotaur.jpg' height = '400px'></a>
+<img src = 'samples/female_knight_shipwreck.jpg' height = '300px'>
+<a href = 'style/the_shipwreck_of_the_minotaur.jpg'><img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '300px'>
 <br>
-<img src = 'samples/femal_knight_udnie.jpg' height = '400px'></a>
-<img src = 'style/udnie.jpg' height = '400px'></a>
+<img src = 'samples/female_knight_udnie.jpg' height = '300px'>
+<a href = 'style/udnie.jpg'><img src = 'style/thumbs/udnie.jpg' height = '300px'>
 <br>
-</div>
+</p>
 
 ## Acknowledgements
 This implementation has been tested with Tensorflow r0.12 on Windows 10 and Ubuntu 14.04.

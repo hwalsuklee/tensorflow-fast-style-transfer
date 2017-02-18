@@ -18,7 +18,7 @@ The implementation is coincided with the paper both in variable-names and algori
 
 4. MSCOCO train2014 DB : [LINK](http://msvocds.blob.core.windows.net/coco2014/train2014.zip)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Please download the file from link above.  (Notice that the file size is over 12GB!!)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Please download the file from link above.  (Notice that the file size is over 12GB!!)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Extract images to `train2014`.
 
 ## Sample results
@@ -30,24 +30,22 @@ Results were obtained from default setting except `--max_size 1920`.
 An image was rendered approximately after 300ms on  GTX 980 ti.
 
 <p align='left'>
-<img src = 'content/female_knight.jpg' height="350px">
-<img src = 'samples/female_knight_wave.jpg' height = '350px'>
-<img src = 'style/thumbs/wave.jpg' height = '350px'>
+<img src = 'content/female_knight.jpg' height="200px">
 <br>
-<img src = 'samples/female_knight_the_scream.jpg' height = '350px'>
-<img src = 'style/thumbs/the_scream.jpg' height = '350px'>
+<img src = 'samples/female_knight_wave.jpg' height = '200px'>
+<img src = 'style/thumbs/wave.jpg' height = '200px'>
+<img src = 'samples/female_knight_the_scream.jpg' height = '200px'>
+<img src = 'style/thumbs/the_scream.jpg' height = '200px'>
 <br>
-<img src = 'samples/female_knight_la_muse.jpg' height = '350px'>
-<img src = 'style/thumbs/la_muse.jpg' height = '350px'>
+<img src = 'samples/female_knight_la_muse.jpg' height = '200px'>
+<img src = 'style/thumbs/la_muse.jpg' height = '200px'>
+<img src = 'samples/female_knight_rain_princess.jpg' height = '200px'>
+<img src = 'style/thumbs/rain_princess.jpg' height = '200px'>
 <br>
-<img src = 'samples/female_knight_rain_princess.jpg' height = '350px'>
-<img src = 'style/thumbs/rain_princess.jpg' height = '350px'>
-<br>
-<img src = 'samples/female_knight_shipwreck.jpg' height = '350px'>
-<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '350px'>
-<br>
-<img src = 'samples/female_knight_udnie.jpg' height = '350px'>
-<img src = 'style/thumbs/udnie.jpg' height = '350px'>
+<img src = 'samples/female_knight_shipwreck.jpg' height = '200px'>
+<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '200px'>
+<img src = 'samples/female_knight_udnie.jpg' height = '200px'>
+<img src = 'style/thumbs/udnie.jpg' height = '200px'>
 <br>
 </p>
 

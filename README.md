@@ -29,23 +29,26 @@ The source image is from https://www.artstation.com/artwork/4zXxW
 Results were obtained from default setting except `--max_size 1920`.  
 An image was rendered approximately after 300ms on  GTX 980 ti.
 
-<p align='left'>
+Click on thumbnails to see full applied style images.
+
+<p align='center'>
 <img src = 'content/female_knight.jpg' height="200px">
-<br>
+</p>
+<p align='center'>
+<a href = 'style/wave.jpg'><img src = 'style/thumbs/wave.jpg' height = '200px'>
 <img src = 'samples/female_knight_wave.jpg' height = '200px'>
-<img src = 'style/thumbs/wave.jpg' height = '200px'>
 <img src = 'samples/female_knight_the_scream.jpg' height = '200px'>
-<img src = 'style/thumbs/the_scream.jpg' height = '200px'>
+<a href = 'style/the_scream.jpg'><img src = 'style/thumbs/the_scream.jpg' height = '200px'>
 <br>
+<a href = 'style/la_muse.jpg'><img src = 'style/thumbs/la_muse.jpg' height = '200px'>
 <img src = 'samples/female_knight_la_muse.jpg' height = '200px'>
-<img src = 'style/thumbs/la_muse.jpg' height = '200px'>
 <img src = 'samples/female_knight_rain_princess.jpg' height = '200px'>
-<img src = 'style/thumbs/rain_princess.jpg' height = '200px'>
+<a href = 'style/rain_princess.jpg'><img src = 'style/thumbs/rain_princess.jpg' height = '200px'>
 <br>
+<a href = 'style/the_shipwreck_of_the_minotaur.jpg'><img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '200px'>
 <img src = 'samples/female_knight_shipwreck.jpg' height = '200px'>
-<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '200px'>
 <img src = 'samples/female_knight_udnie.jpg' height = '200px'>
-<img src = 'style/thumbs/udnie.jpg' height = '200px'>
+<a href = 'style/udnie.jpg'><img src = 'style/thumbs/udnie.jpg' height = '200px'>
 <br>
 </p>
 

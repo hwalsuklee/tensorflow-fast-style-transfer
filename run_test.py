@@ -10,7 +10,7 @@ def parse_args():
     desc = "Tensorflow implementation of 'Perceptual Losses for Real-Time Style Transfer and Super-Resolution'"
     parser = argparse.ArgumentParser(description=desc)
 
-    parser.add_argument('--style-model', type=str, default='models/wave.ckpt', help='location for model file (*.ckpt)',
+    parser.add_argument('--style_model', type=str, default='models/wave.ckpt', help='location for model file (*.ckpt)',
                         required=True)
 
     parser.add_argument('--content', type=str, default='content/female_knight.jpg',
@@ -25,13 +25,13 @@ def parse_args():
 
 """checking arguments"""
 def check_args(args):
-    # --style-model
+    # --style_model
     try:
         #Tensorflow r0.12 requires 3 files related to *.ckpt
-        assert os.path.exists(args.style-model + '.index') and os.path.exists(args.model + '.meta') and os.path.exists(
-            args.model + '.data-00000-of-00001')
+        assert os.path.exists(args.style_model + '.index') and os.path.exists(args.style_model + '.meta') and os.path.exists(
+            args.style_model + '.data-00000-of-00001')
     except:
-        print('There is no %s'%args.model)
+        print('There is no %s'%args.style_model)
         print('Tensorflow r0.12 requires 3 files related to *.ckpt')
         print('If you want to restore any models generated from old tensorflow versions, this assert might be ignored')
         return None
@@ -79,7 +79,7 @@ def main():
 
     # build the graph
     transformer = style_transfer_tester.StyleTransferTester(session=sess,
-                                                            model_path=args.model,
+                                                            model_path=args.style_model,
                                                             content_image=content_image,
                                                             )
     # execute the graph

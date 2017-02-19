@@ -4,7 +4,7 @@ A tensorflow implementation of fast style transfer described in the papers:
 * [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](http://cs.stanford.edu/people/jcjohns/eccv16/) by Johnson
 * [Instance Normalization](https://arxiv.org/abs/1607.08022) by Ulyanov
 
-I recommend you to check my previous implementation of [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) in [here](https://github.com/hwalsuklee/tensorflow-style-transfer), since the implementation is almost similar to it.  
+I recommend you to check my previous implementation of [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) in [here](https://github.com/hwalsuklee/tensorflow-style-transfer), since implementation in here is almost similar to it.  
 The implemenationa is also coincided with the paper both in variable-names and algorithms so that a reader of the paper and can understand the code without too much effort.
 
 ## Sample results
@@ -119,6 +119,14 @@ python run_test.py --content <content file> --model <style-model file> --output 
 
 *Optional* :  
 * `--max_size`: Maximum width or height of the input images. *None* do not change image size. *Default*: `None`
+
+## References
+
+The implementation is based on the projects:
+
+#### https://github.com/jcjohnson/fast-neural-style
+
+#### https://github.com/lengstrom/fast-style-transfer  
 
 ## Acknowledgements
 This implementation has been tested with Tensorflow r0.12 on Windows 10 and Ubuntu 14.04.

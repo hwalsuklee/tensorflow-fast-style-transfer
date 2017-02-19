@@ -124,9 +124,8 @@ python run_test.py --content <content file> --model <style-model file> --output 
 
 The implementation is based on the projects:
 
-#### https://github.com/jcjohnson/fast-neural-style
-
-#### https://github.com/lengstrom/fast-style-transfer  
+[1] Torch implementation by paper author:  https://github.com/jcjohnson/fast-neural-style  
+[2] Tensorflow implementation : https://github.com/lengstrom/fast-style-transfer    
 
 ## Acknowledgements
 This implementation has been tested with Tensorflow r0.12 on Windows 10 and Ubuntu 14.04.

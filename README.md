@@ -19,18 +19,17 @@ The implemenationa is also coincided with the paper both in variable-names and a
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Please download the file from link above.  (Notice that the file size is over 12GB!!)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Extract images to `train2014`.
 
-### Running
-#### Train
+### Train
 ```
 python run_train.py --style <style file> --output <output directory> --trainDB <trainDB directory> --vgg_model <model directory>
 ```
 *Example*:
 `python run_main.py --style style/wave.jpg --output model --trainDB train2014 --vgg_model pre_trained_model`
 
-##### Arguments
+#### Arguments
 *Required* :  
 * `--style`: Filename of the style image. *Default*: `images/wave.jpg`
-* `--output`: File path for trained-model. Train-log is also saved here. *Default*: `model`
+* `--output`: File path for trained-model. Train-log is also saved here. *Default*: `models`
 * `--trainDB`: Relative or absolute directory path to MSCOCO DB. *Default*: `train2014`
 * `--vgg_model`: Relative or absolute directory path to pre trained model. *Default*: `pre_trained_model`
 
@@ -46,21 +45,21 @@ python run_train.py --style <style file> --output <output directory> --trainDB <
 * `--num_epochs`: The number of epochs to run. *Default*: `2`
 * `--learn_rate`: Learning rate for Adam optimizer. *Default*: `1e-3`
 
-#### Test
+### Test
 ```
 python run_test.py --content <content file> --model <style-model file> --output <output file> 
 ```
 *Example*:
 `python run_test.py --content content/female_knight.jpg --model models/wave.ckpt --output result.jpg`
 
-##### Arguments
+#### Arguments
 *Required* :  
 * `--content`: Filename of the content image. *Default*: `content/female_knight.jpg`
 * `--style-model`: Filename of the style model. *Default*: `models/wave.ckpt`
 * `--output`: Filename of the output image. *Default*: `result.jpg`  
 
 *Optional* :  
-* `--max_size`: Maximum width or height of the input images. *Default*: `None`
+* `--max_size`: Maximum width or height of the input images. *None* do not change image size. *Default*: `None`
 
 ## Sample results
 

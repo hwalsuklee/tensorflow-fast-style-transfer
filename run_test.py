@@ -10,10 +10,10 @@ def parse_args():
     desc = "Tensorflow implementation of 'Perceptual Losses for Real-Time Style Transfer and Super-Resolution'"
     parser = argparse.ArgumentParser(description=desc)
 
-    parser.add_argument('--model', type=str, default='models/wave.ckpt', help='location for model file (*.ckpt)',
+    parser.add_argument('--style-model', type=str, default='models/wave.ckpt', help='location for model file (*.ckpt)',
                         required=True)
 
-    parser.add_argument('--content', type=str, default='images/chicago.jpg',
+    parser.add_argument('--content', type=str, default='content/female_knight.jpg',
                         help='File path of content image (notation in the paper : x)', required=True)
 
     parser.add_argument('--output', type=str, default='result.jpg',
@@ -25,10 +25,10 @@ def parse_args():
 
 """checking arguments"""
 def check_args(args):
-    # --model
+    # --style-model
     try:
         #Tensorflow r0.12 requires 3 files related to *.ckpt
-        assert os.path.exists(args.model + '.index') and os.path.exists(args.model + '.meta') and os.path.exists(
+        assert os.path.exists(args.style-model + '.index') and os.path.exists(args.model + '.meta') and os.path.exists(
             args.model + '.data-00000-of-00001')
     except:
         print('There is no %s'%args.model)

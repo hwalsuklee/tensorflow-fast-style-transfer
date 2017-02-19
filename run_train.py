@@ -12,10 +12,10 @@ def parse_args():
     desc = "Tensorflow implementation of 'Image Style Transfer Using Convolutional Neural Networks"
     parser = argparse.ArgumentParser(description=desc)
 
-    parser.add_argument('--model_path', type=str, default='pre_trained_model', help='The directory where the pre-trained model was saved', required=True)
+    parser.add_argument('--vgg_model', type=str, default='pre_trained_model', help='The directory where the pre-trained model was saved', required=True)
     parser.add_argument('--trainDB_path', type=str, default='train2014',
                         help='The directory where MSCOCO DB was saved', required=True)
-    parser.add_argument('--style', type=str, default='style/rain_princess.jpg', help='File path of style image (notation in the paper : a)', required=True)
+    parser.add_argument('--style', type=str, default='style/wave.jpg', help='File path of style image (notation in the paper : a)', required=True)
     parser.add_argument('--output', type=str, default='model', help='File path for trained-model. Train-log is also saved here.', required=True)
 	
     parser.add_argument('--content_weight', type=float, default=7.5e0, help='Weight of content-loss')
@@ -39,8 +39,8 @@ def parse_args():
 """checking arguments"""
 def check_args(args):
 
-    # --model_path
-    model_file_path = args.model_path + '/' + vgg19.MODEL_FILE_NAME
+    # --vgg_model
+    model_file_path = args.vgg_model + '/' + vgg19.MODEL_FILE_NAME
     try:
         assert os.path.exists(model_file_path)
     except:
@@ -145,7 +145,7 @@ def main():
         exit()
 
     # initiate VGG19 model
-    model_file_path = args.model_path + '/' + vgg19.MODEL_FILE_NAME
+    model_file_path = args.vgg_model + '/' + vgg19.MODEL_FILE_NAME
     vgg_net = vgg19.VGG19(model_file_path)
 
     # get file list for training

@@ -168,24 +168,11 @@ class StyleTransferTrainer:
         """ session run """
         self.sess.run(tf.initialize_all_variables())
 
-        # restore check-point if it exits
+        # saver to save model
         saver = tf.train.Saver()
-        checkpoint_exists = True
-        try:
-            ckpt_state = tf.train.get_checkpoint_state(self.save_path)
-        except tf.errors.OutOfRangeError as e:
-            print('Cannot restore checkpoint: %s' % e)
-            checkpoint_exists = False
-        if not (ckpt_state and ckpt_state.model_checkpoint_path):
-            print('No model to restore at %s' % self.save_path)
-            checkpoint_exists = False
 
-        if checkpoint_exists:
-            tf.logging.info('Loading checkpoint %s', ckpt_state.model_checkpoint_path)
-            saver.restore(self.sess, ckpt_state.model_checkpoint_path)
-
-        minimum_L_tot = 1e12
         # loop for train
+        minimum_L_tot = 1e99
         for epoch in range(self.num_epochs):
 
             num_examples = len(self.x_list)
@@ -211,13 +198,13 @@ class StyleTransferTrainer:
                 # write logs at every iteration
                 summary_writer.add_summary(summary, step)
 
-                if (minimum_L_tot > L_total and step > 10000) or (step < 10000 and step % 1000 == 0):
+                if minimum_L_tot > L_total:
                     minimum_L_tot = L_total
                     print ('updated by %g'%minimum_L_tot)
                     saver = tf.train.Saver()
-                    res = saver.save(self.sess, self.save_path + '/fns.ckpt', step)
+                    res = saver.save(self.sess, self.save_path + '/minimum_loss.ckpt')
 
-        res = saver.save(self.sess,self.save_path+'/fns.ckpt', step)
+        res = saver.save(self.sess,self.save_path+'/final.ckpt')
 
     def _gram_matrix(self, tensor, shape=None):
 

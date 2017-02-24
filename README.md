@@ -5,7 +5,7 @@ A tensorflow implementation of fast style transfer described in the papers:
 * [Instance Normalization](https://arxiv.org/abs/1607.08022) by Ulyanov
 
 I recommend you to check my previous implementation of [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) in [here](https://github.com/hwalsuklee/tensorflow-style-transfer), since implementation in here is almost similar to it.  
-The implemenationa is also coincided with the paper both in variable-names and algorithms so that a reader of the paper and can understand the code without too much effort.
+The implementation is also coincided with the paper both in variable-names and algorithms so that a reader of the paper and can understand the code without too much effort.
 
 ## Sample results
 
@@ -129,7 +129,9 @@ Train time for 2 epochs with 8 batch size is 6~8 hours. It depends on which styl
 The implementation is based on the projects:
 
 [1] Torch implementation by paper author:  https://github.com/jcjohnson/fast-neural-style  
-[2] Tensorflow implementation : https://github.com/lengstrom/fast-style-transfer
+* The major difference between [1] and implementation in here is to use VGG19 instead of VGG16 in calculation of loss functions. I did not want to give too much modification on my previous implementation on style-transfer.
+[2] Tensorflow implementation : https://github.com/lengstrom/fast-style-transfer  
+* The major difference between [2] and implementation in here is the architecture of image-transform-network. I made it just as in the paper. Please see the [supplementary](http://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16Supplementary.pdf) of the paper.
 
 ## Acknowledgements
 This implementation has been tested with Tensorflow r0.12 on Windows 10 and Ubuntu 14.04.

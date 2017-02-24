@@ -120,9 +120,9 @@ python run_test.py --content <content file> --model <style-model file> --output 
 *Optional* :  
 * `--max_size`: Maximum width or height of the input images. *None* do not change image size. *Default*: `None`
 
-## Training time
+## Train time
 
-Training time for 2 epochs with 8 batch size is 6~8 hours. It depends on which style image you use.
+Train time for 2 epochs with 8 batch size is 6~8 hours. It depends on which style image you use.
 
 ## References
 

@@ -25,15 +25,15 @@ Click on result images to see full size images.
 <img src = 'samples/chicago_the_scream.jpg' height = '210px'>
 <img src = 'style/thumbs/the_scream.jpg' height = '210px'>
 <br>
-<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '210px'>
-<img src = 'samples/chicago_shipwreck.jpg' height = '210px'>
-<img src = 'samples/chicago_udnie.jpg' height = '210px'>
-<img src = 'style/thumbs/udnie.jpg' height = '210px'>
-<br>
 <img src = 'style/thumbs/la_muse.jpg' height = '210px'>
 <img src = 'samples/chicago_la_muse.jpg' height = '210px'>
 <img src = 'samples/chicago_rain_princess.jpg' height = '210px'>
 <img src = 'style/thumbs/rain_princess.jpg' height = '210px'>
+<br>
+<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '210px'>
+<img src = 'samples/chicago_shipwreck.jpg' height = '210px'>
+<img src = 'samples/chicago_udnie.jpg' height = '210px'>
+<img src = 'style/thumbs/udnie.jpg' height = '210px'>
 <br>
 </p>
 
@@ -54,15 +54,15 @@ Click on result images to see full size images.
 <img src = 'samples/female_knight_the_scream.jpg' height = '210px'>
 <img src = 'style/thumbs/the_scream.jpg' height = '210px'>
 <br>
-<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '210px'>
-<img src = 'samples/female_knight_shipwreck.jpg' height = '210px'>
-<img src = 'samples/female_knight_udnie.jpg' height = '210px'>
-<img src = 'style/thumbs/udnie.jpg' height = '210px'>
-<br>
 <img src = 'style/thumbs/la_muse.jpg' height = '210px'>
 <img src = 'samples/female_knight_la_muse.jpg' height = '210px'>
 <img src = 'samples/female_knight_rain_princess.jpg' height = '210px'>
 <img src = 'style/thumbs/rain_princess.jpg' height = '210px'>
+<br>
+<img src = 'style/thumbs/the_shipwreck_of_the_minotaur.jpg' height = '210px'>
+<img src = 'samples/female_knight_shipwreck.jpg' height = '210px'>
+<img src = 'samples/female_knight_udnie.jpg' height = '210px'>
+<img src = 'style/thumbs/udnie.jpg' height = '210px'>
 <br>
 </p>
 

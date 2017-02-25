@@ -8,6 +8,10 @@ I recommend you to check my previous implementation of [A Neural Algorithm of Ar
 
 Fast style transfer (or fast neural style) is an offline learning version of neural style algorithm. The neural style learnable parameters are the pixels of the target image. On the other hand, the fast neural style trains the image transfer network to produce the same output image as the result of neural style. Input images of any size can be converted to that style in milliseconds through the image transform network.  
 
+<p align='center'>
+<img src = 'style/thumbs/neural_style_VS_fast_neural_style.jpg' height="400px">
+</p>
+
 ## Sample results
 
 All style-images and content-images to produce following sample results are given in `style` and `content` folders.

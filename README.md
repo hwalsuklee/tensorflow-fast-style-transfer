@@ -4,8 +4,9 @@ A tensorflow implementation of fast style transfer described in the papers:
 * [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](http://cs.stanford.edu/people/jcjohns/eccv16/) by Johnson
 * [Instance Normalization](https://arxiv.org/abs/1607.08022) by Ulyanov
 
-I recommend you to check my previous implementation of [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) in [here](https://github.com/hwalsuklee/tensorflow-style-transfer), since implementation in here is almost similar to it.  
-The implementation is also coincided with the paper both in variable-names and algorithms so that a reader of the paper and can understand the code without too much effort.
+I recommend you to check my previous implementation of [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576) (Neural style) in [here](https://github.com/hwalsuklee/tensorflow-style-transfer), since implementation in here is almost similar to it.  
+
+Fast style transfer (or fast neural style) is an offline learning version of neural style algorithm. The neural style learnable parameters are the pixels of the target image. On the other hand, the fast neural style trains the image transfer network to produce the same output image as the result of neural style. Input images of any size can be converted to that style in milliseconds through the image transform network.  
 
 ## Sample results
 

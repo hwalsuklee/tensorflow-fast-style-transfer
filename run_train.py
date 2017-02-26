@@ -34,6 +34,13 @@ def parse_args():
     parser.add_argument('--num_epochs', type=int, default=2, help='The number of epochs to run')
     parser.add_argument('--batch_size', type=int, default=4, help='Batch size')
 
+    parser.add_argument('--checkpoint_every', type=int, default=1000, help='save a trained model every after this number of iterations')
+
+    parser.add_argument('--test', type=str, default=None,
+                        help='File path of content image (notation in the paper : x)')
+
+    parser.add_argument('--max_size', type=int, default=None, help='The maximum width or height of input images')
+
     return check_args(parser.parse_args())
 
 """checking arguments"""
@@ -128,6 +135,28 @@ def check_args(args):
     except:
         print('batch size must be larger than or equal to one')
 
+    # --checkpoint_every
+    try:
+        assert args.checkpoint_every >= 1
+    except:
+        print('checkpoint period must be larger than or equal to one')
+
+    # --test
+    try:
+        if args.test is not None:
+            assert os.path.exists(args.test)
+    except:
+        print('There is no %s' % args.test)
+        return None
+
+    # --max_size
+    try:
+        if args.max_size is not None:
+            assert args.max_size > 0
+    except:
+        print('The maximum width or height of input image must be positive')
+        return None
+
     return args
 
 """add one dim for batch"""
@@ -181,6 +210,9 @@ def main():
                                                           tv_weight=args.tv_weight,
                                                           learn_rate=args.learn_rate,
                                                           save_path=args.output,
+                                                          check_period=args.checkpoint_every,
+                                                          test_image=args.test,
+                                                          max_size=args.max_size,
                                                           )
     # launch the graph in a session
     trainer.train()

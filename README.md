@@ -103,8 +103,8 @@ python run_train.py --style <style file> --output <output directory> --trainDB <
 * `--num_epochs`: The number of epochs to run. *Default*: `2`
 * `--learn_rate`: Learning rate for Adam optimizer. *Default*: `1e-3`
 * `--checkpoint_every`: Save-frequency for checkpoint. *Default*: `1000`
-* `--test`: Filename of the content image for test. *Default*: `content/female_knight.jpg`
-* `--max_size`: Maximum width or height of the input images. *None* do not change image size. *Default*: `None` 
+* `--test`: Filename of the content image for *test during training*. *Default*: `None`
+* `--max_size`: Maximum width or height of the input image for test. *None* do not change image size. *Default*: `None` 
 
 #### Trained models
 You can download all the 6 trained models from [here](https://mega.nz/#F!VEAm1CDD!ILTR1TA5zFJ_Cp9I5DRofg)

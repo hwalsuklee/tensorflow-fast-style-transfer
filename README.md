@@ -106,7 +106,11 @@ python run_train.py --style <style file> --output <output directory> --trainDB <
 * `--test`: Filename of the content image for test. *Default*: `content/female_knight.jpg`
 * `--max_size`: Maximum width or height of the input images. *None* do not change image size. *Default*: `None` 
 
-### Test
+#### Trained models
+You can download all the 6 trained models from [here](https://mega.nz/#F!VEAm1CDD)
+
+### Test  
+
 ```
 python run_test.py --content <content file> --model <style-model file> --output <output file> 
 ```

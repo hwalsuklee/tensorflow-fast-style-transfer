@@ -107,7 +107,7 @@ python run_train.py --style <style file> --output <output directory> --trainDB <
 * `--max_size`: Maximum width or height of the input images. *None* do not change image size. *Default*: `None` 
 
 #### Trained models
-You can download all the 6 trained models from [here](https://mega.nz/#F!VEAm1CDD)
+You can download all the 6 trained models from [here](https://mega.nz/#F!VEAm1CDD!ILTR1TA5zFJ_Cp9I5DRofg)
 
 ### Test  
 

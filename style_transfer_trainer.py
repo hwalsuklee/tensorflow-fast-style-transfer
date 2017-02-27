@@ -253,7 +253,8 @@ class StyleTransferTrainer:
                         output_image = np.clip(output_image, 0., 255.)
 
                         utils.save_image(output_image, self.save_path + '/result_' + "%05d" % step + '.jpg')
-            epoch = (step * self.batch_size) // num_examples
+            epoch += 1
+            iterations = 0
         res = saver.save(self.sess,self.save_path+'/final.ckpt')
 
     def _gram_matrix(self, tensor, shape=None):

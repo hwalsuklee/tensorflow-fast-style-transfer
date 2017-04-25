@@ -82,7 +82,7 @@ Click on result images to see full size images.
 python run_train.py --style <style file> --output <output directory> --trainDB <trainDB directory> --vgg_model <model directory>
 ```
 *Example*:
-`python run_main.py --style style/wave.jpg --output model --trainDB train2014 --vgg_model pre_trained_model`
+`python run_train.py --style style/wave.jpg --output model --trainDB train2014 --vgg_model pre_trained_model`
 
 #### Arguments
 *Required* :  
@@ -112,10 +112,10 @@ You can download all the 6 trained models from [here](https://mega.nz/#F!VEAm1CD
 ### Test  
 
 ```
-python run_test.py --content <content file> --model <style-model file> --output <output file> 
+python run_test.py --content <content file> --style_model <style-model file> --output <output file> 
 ```
 *Example*:
-`python run_test.py --content content/female_knight.jpg --model models/wave.ckpt --output result.jpg`
+`python run_test.py --content content/female_knight.jpg --style_model models/wave.ckpt --output result.jpg`
 
 #### Arguments
 *Required* :  

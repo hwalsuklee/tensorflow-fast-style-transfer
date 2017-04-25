@@ -101,6 +101,7 @@ python run_train.py --style <style file> --output <output directory> --trainDB <
 * `--style_layer_weights`: *Space-separated* weights of each style layer to loss. *Default*: `0.2 0.2 0.2 0.2 0.2`
 * `--max_size`: Maximum width or height of the input images. *Default*: `None`
 * `--num_epochs`: The number of epochs to run. *Default*: `2`
+* `--batch_size`: Batch size. *Default*: `4`
 * `--learn_rate`: Learning rate for Adam optimizer. *Default*: `1e-3`
 * `--checkpoint_every`: Save-frequency for checkpoint. *Default*: `1000`
 * `--test`: Filename of the content image for *test during training*. *Default*: `None`

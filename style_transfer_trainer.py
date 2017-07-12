@@ -277,7 +277,7 @@ class StyleTransferTrainer:
         feats_T = tf.transpose(feats, perm=[0, 2, 1])
 
         # paper suggests to normalize gram matrix by its number of elements
-        gram = tf.batch_matmul(feats_T, feats) / CHW
+        gram = tf.matmul(feats_T, feats) / CHW
 
         return gram
 

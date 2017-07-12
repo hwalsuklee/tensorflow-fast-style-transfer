@@ -142,4 +142,4 @@ The implementation is based on the projects:
 * The major difference between [2] and implementation in here is the architecture of image-transform-network. I made it just as in the paper. Please see the [supplementary](http://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16Supplementary.pdf) of the paper.
 
 ## Acknowledgements
-This implementation has been tested with Tensorflow r0.12 on Windows 10 and Ubuntu 14.04.
+This implementation has been tested with Tensorflow over ver1.0 on Windows 10 and Ubuntu 14.04.
